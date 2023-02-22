@@ -26,13 +26,20 @@ cd SWAPI-test/
 npm i
 ```
 
-### Usage
+## Usage
 
 1. Start the development server:
+
 ```
 npm start
 ```
-2. Open your browser and navigate to http://localhost:3000.
+2. Open your browser and navigate to
+```
+http://localhost:3000/
+```
+
+
+## Production build
 
 ```
 npm run build
@@ -53,8 +60,12 @@ Your app is ready to be deployed!
 
 ## Acknowledgments
 - This project was created as part of a technical test. 
+- All the requested logic was implemented in the Dashboard component.
 - Project started from the [Free React Admin Template](https://coreui.io/product/free-react-admin-template/).
 - Unused components and screens where removed.
 - Provided template was initialy implemented using only js, so no typescript was used.
-- No requirements for storing data in Redux where provided, so data is saved on the componenet level using react-query;
+- No requirements for storing data in Redux where provided, so data is saved on the componenet level using react-query.
+  (*project size is small and data used only in one component*) ;
 - App fetch data from [SWAPI](the Star Wars API)(https://swapi.dev/documentation#people)
+- .ENV file was not used because of the open source API, wich can be used by anyone. In other case, for security reasons, API url should be included inside of .env file
+- No requirements for unit tests where provided, so tests for components where not implemented
